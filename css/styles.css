@@ -5,12 +5,14 @@
   --accent-color: #2196f3;
   --logo-color: #000000;
   --background-color: #ffffff;
+  --background-hero: #c4c4c4;
   --second-backgraund-color: #2f303a;
   --btn-color: #f5f4fa;
   --second-btn-color: #188ce8;
   --address-color: rgba(255, 255, 255, 0.6);
   --border: #ececec;
   --second-border: #eeeeee;
+  --color-icons: #afb1b8;
 }
 
 p,
@@ -168,12 +170,22 @@ img {
 }
 
 /* --------------HERO------------- */
-
 .hero {
-  text-align: center;
-  background-color: var(--second-backgraund-color);
+  background-color: var(--background-hero);
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -183,7 +195,6 @@ img {
   max-width: 626px;
 
   color: var(--third-text-color);
-  background-color: var(--second-backgraund-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -194,6 +205,7 @@ img {
 }
 
 /* button */
+
 .button {
   border-radius: 4px;
   border: none;
@@ -207,6 +219,8 @@ img {
 
   background-color: var(--accent-color);
   color: var(--third-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
   font-weight: 700;
   font-size: 16px;
@@ -217,14 +231,8 @@ img {
 .hero-button:focus {
   background-color: var(--second-btn-color);
   color: var(--third-text-color);
-}
-
-.filter-button {
-  padding: 6px 22px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* --------------SPECIFICS------------- */
@@ -291,17 +299,17 @@ img {
   text-align: center;
 }
 
-.team-list .item:not(:last-child) {
+.team-list .team-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-list .item {
+.team-list .team-item {
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--background-color);
 }
 
-.team-list .title {
+.team-list .team-title {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -314,12 +322,70 @@ img {
 
   font-size: 16px;
   line-height: 1.18;
+
+  margin-bottom: 16px;
 }
 
 .team-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-soc-list .team-soc-item {
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+}
+
+.team-soc-item:last-child {
+  margin-right: 0;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-icons);
+}
+.team-soc-icon {
+  fill: currentColor;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* --------------CLIENTS------------- */
+
+/* .clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.list-clients {
+  display: flex;
+}
+.list-clients .item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.list-clients .item:not(:last-child) {
+  margin-right: 30px;
+} */
 
 /* --------------FOOTER------------- */
 .footer {
@@ -379,22 +445,13 @@ img {
   margin-right: 6px;
 }
 
-.filter .button {
-  background-color: var(--btn-color);
-  color: var(--primary-text-color);
-}
-.filter .button:hover,
-.filter .button:focus {
-  background-color: var(--accent-color);
-  color: var(--third-text-color);
-}
-
 .work-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
+
 .work-list > .item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
@@ -428,4 +485,22 @@ img {
   margin-top: 4px;
 
   line-height: 1.8;
+}
+
+.filter-button {
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.filter-button {
+  background-color: var(--btn-color);
+  color: var(--primary-text-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
 }
