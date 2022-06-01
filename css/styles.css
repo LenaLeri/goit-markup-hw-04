@@ -151,10 +151,10 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  /* margin-left: 331px; */
 }
 
-.auth-nav .link {
+.auth-nav .header-mail-link,
+.auth-nav .header-phone-link {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -164,9 +164,23 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+}
+
+.header-mail-link,
+.header-phone-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* --------------HERO------------- */
