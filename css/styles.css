@@ -411,8 +411,6 @@ img {
 .clients-list .clients-item {
   width: 170px;
   height: 92px;
-  /* border: 1px solid var(--color-icons);
-  border-radius: 4px; */
   margin-right: 30px;
 }
 .clients-item:last-child {
