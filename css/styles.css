@@ -284,7 +284,10 @@ img {
   background-color: var(--btn-color);
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
 }
 .specifics-icon {
   width: 70px;
@@ -446,6 +449,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footeer-content + .footeer-content {
   margin-left: 70px;
@@ -489,7 +493,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
-  padding-top: 12px;
 }
 
 .footer-join-list {
@@ -599,8 +602,12 @@ img {
   border-radius: 4px;
 }
 
-.card-item:hover,
-.card-item:focus {
+.card-item-link {
+  display: block;
+}
+
+.card-item-link:hover,
+.card-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
