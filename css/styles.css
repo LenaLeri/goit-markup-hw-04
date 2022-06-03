@@ -482,10 +482,7 @@ img {
   margin-top: 9px;
 }
 
-.footeer-content-soc {
-}
-
-.footer-title {
+.footer-text {
   text-transform: uppercase;
   color: var(--background-color);
   font-weight: 700;
